@@ -14,3 +14,9 @@ Utilizando dados clínicos e características celulares extraídos de imagens di
 **Codifiquei a variável alvo:** A coluna 'diagnosis', que indica 'Maligno' ou 'Benigno', foi convertida para formato numérico (por exemplo, M=1, B=0).
 
 <img width="1368" height="554" alt="Image" src="https://github.com/user-attachments/assets/bfbc6d6c-5e16-4f8e-bcfd-58d4747c7bf7" />
+
+# Divisão em Conjuntos de Treinamento e Teste
+
+Por fim, dividirei os dados pré-processados em conjuntos de treinamento e teste para avaliar o desempenho do modelo em dados não vistos. Utilizarei a função train_test_split com um test_size de 0.2 (20% para o conjunto de teste) e random_state=42 para garantir a reprodutibilidade dos resultados. Após a divisão, os dados de treino e teste serão armazenados nas variáveis X_train_actual, X_test_actual, y_train_actual e y_test_actual, permitindo validar as dimensões (shape) de cada matriz antes de iniciar a modelagem.
+
+<img width="1321" height="315" alt="Image" src="https://github.com/user-attachments/assets/291965c2-3d87-472d-9e65-868c18947863" />
