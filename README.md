@@ -20,3 +20,13 @@ Utilizando dados clínicos e características celulares extraídos de imagens di
 Por fim, dividirei os dados pré-processados em conjuntos de treinamento e teste para avaliar o desempenho do modelo em dados não vistos. Utilizarei a função train_test_split com um test_size de 0.2 (20% para o conjunto de teste) e random_state=42 para garantir a reprodutibilidade dos resultados. Após a divisão, os dados de treino e teste serão armazenados nas variáveis X_train_actual, X_test_actual, y_train_actual e y_test_actual, permitindo validar as dimensões (shape) de cada matriz antes de iniciar a modelagem.
 
 <img width="1321" height="315" alt="Image" src="https://github.com/user-attachments/assets/291965c2-3d87-472d-9e65-868c18947863" />
+
+# Avaliando a Precisão do Modelo
+
+Regressão Logística: Alcançou o desempenho superior com uma acurácia de 95.61%.
+
+Árvore de Decisão: Apresentou excelente robustez, atingindo uma acurácia de 93.86%.
+
+**Superioridade Linear Confiável:** Ambas as abordagens demonstraram um desempenho extremamente sólido na classificação de casos malignos e benignos. No entanto, a Regressão Logística obteve uma acurácia ligeiramente superior e maior estabilidade neste conjunto de teste específico. Isso sugere que, após a padronização e o escalonamento dos recursos (StandardScaler), as fronteiras de decisão do problema ganharam uma separabilidade linear muito bem definida.
+
+<img width="1016" height="347" alt="Image" src="https://github.com/user-attachments/assets/0b5029ba-1654-4350-9718-63970f302c1b" />
