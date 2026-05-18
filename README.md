@@ -1,7 +1,7 @@
 # 🎗️ Predição e Classificação Adaptativa de Câncer de Mama com Machine Learning
 🧬 Pipeline de Machine Learning para classificação e diagnóstico preditivo de câncer de mama (Maligno/Benigno) utilizando Regressão Logística e Árvores de Decisão com foco em interpretabilidade de atributos biomédicos.
 
-# Objetivo do Projeto
+# 🎯 Objetivo do Projeto
 
 Este projeto desenvolve um pipeline de dados e inteligência artificial focado em saúde preditiva, com o objetivo de auxiliar na identificação precoce e classificação de tumores de mama entre Malignos e Benignos.
 
