@@ -53,3 +53,9 @@ Para avaliar melhor o desempenho dos nossos classificadores, calculamos e exibim
 Na imagem abaixo Calculamos a acurácia, a precisão e a revocação para os modelos de Árvore de Decisão e Regressão Logística. Essas métricas fornecem uma avaliação mais abrangente do desempenho do modelo, especialmente em conjuntos de dados desbalanceados.
 
 <img width="1237" height="656" alt="Image" src="https://github.com/user-attachments/assets/d4afa752-246d-4b38-a459-b9bfc0d9c562" />
+
+# Curvas ROC
+
+Para avaliar melhor o desempenho dos nossos modelos, especialmente considerando a relação entre a taxa de verdadeiros positivos (sensibilidade) e a taxa de falsos positivos (1 - especificidade), vamos plotar a curva ROC (Receiver Operating Characteristic) para os modelos de Árvore de Decisão e Regressão Logística. Também calcularemos a Área Sob a Curva (AUC), que resume a capacidade do modelo de distinguir entre as classes.
+
+<img width="846" height="624" alt="Image" src="https://github.com/user-attachments/assets/7b8b601f-a1d1-4259-9975-e3fbd67c82ca" />
