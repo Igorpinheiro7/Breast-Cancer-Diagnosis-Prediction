@@ -30,3 +30,20 @@ Regressão Logística: Alcançou o desempenho superior com uma acurácia de 95.6
 **Superioridade Linear Confiável:** Ambas as abordagens demonstraram um desempenho extremamente sólido na classificação de casos malignos e benignos. No entanto, a Regressão Logística obteve uma acurácia ligeiramente superior e maior estabilidade neste conjunto de teste específico. Isso sugere que, após a padronização e o escalonamento dos recursos (StandardScaler), as fronteiras de decisão do problema ganharam uma separabilidade linear muito bem definida.
 
 <img width="1016" height="347" alt="Image" src="https://github.com/user-attachments/assets/0b5029ba-1654-4350-9718-63970f302c1b" />
+
+# 🔍 Comparação visual das previsões
+
+O que este gráfico nos mostra?
+Sobreposição Perfeita (Roxo/Centro do Alvo): Sempre que o X vermelho fica exatamente centralizado dentro do círculo azul, significa que o modelo realizou uma predição correta (Verdadeiro Positivo ou Verdadeiro Negativo).
+
+Pontos Isolados: Casos onde o círculo azul e o X vermelho aparecem separados na mesma amostra vertical indicam um erro de classificação (Falsos Positivos ou Falsos Negativos), permitindo rastrear visualmente quais amostras clínicas geraram incerteza nos algoritmos.
+
+<img width="1390" height="480" alt="Image" src="https://github.com/user-attachments/assets/ad6c5665-e942-478f-9d51-3570e8e63bc6" />
+
+# Matriz de Confusão
+
+Para avaliar melhor o desempenho dos nossos classificadores, calculamos e exibimos a matriz de confusão para os modelos de Árvore de Decisão e Regressão Logística. Isso nos forneceu informações sobre o número de previsões verdadeiras positivas, verdadeiras negativas, falsas positivas e falsas negativas.
+
+<img width="528" height="470" alt="Image" src="https://github.com/user-attachments/assets/5f480ec3-3756-44fd-9942-14ce154e55fe" />
+
+<img width="528" height="470" alt="Image" src="https://github.com/user-attachments/assets/7270be9e-2bd1-43e8-8af5-11d2e1dc41a3" />
