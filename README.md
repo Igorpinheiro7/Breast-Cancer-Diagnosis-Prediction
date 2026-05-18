@@ -47,3 +47,9 @@ Para avaliar melhor o desempenho dos nossos classificadores, calculamos e exibim
 <img width="528" height="470" alt="Image" src="https://github.com/user-attachments/assets/5f480ec3-3756-44fd-9942-14ce154e55fe" />
 
 <img width="528" height="470" alt="Image" src="https://github.com/user-attachments/assets/7270be9e-2bd1-43e8-8af5-11d2e1dc41a3" />
+
+# Calculando a acurácia, a precisão e a revocação
+
+Na imagem abaixo Calculamos a acurácia, a precisão e a revocação para os modelos de Árvore de Decisão e Regressão Logística. Essas métricas fornecem uma avaliação mais abrangente do desempenho do modelo, especialmente em conjuntos de dados desbalanceados.
+
+<img width="1237" height="656" alt="Image" src="https://github.com/user-attachments/assets/d4afa752-246d-4b38-a459-b9bfc0d9c562" />
