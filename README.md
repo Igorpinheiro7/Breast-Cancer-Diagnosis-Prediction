@@ -93,7 +93,7 @@ Para avaliar melhor o desempenho dos nossos classificadores, calculamos e exibim
 *   Ambos os modelos tiveram o mesmo número de Falsos Negativos (4), o que significa que ambos erraram em 4 casos de câncer (Maligno) predizendo que eram Benignos.
 *   Ambos os modelos acertaram o mesmo número de Verdadeiros Positivos (39), identificando corretamente os casos Malignos.
 
-# Calculando a acurácia, a precisão e a revocação
+# 🧮 Calculando a acurácia, a precisão e a revocação
 
 Na imagem abaixo Calculamos a acurácia, a precisão e a revocação para os modelos de Árvore de Decisão e Regressão Logística. Essas métricas fornecem uma avaliação mais abrangente do desempenho do modelo, especialmente em conjuntos de dados desbalanceados.
 
@@ -123,7 +123,7 @@ Esse relatório de classificação é para obter uma análise mais detalhada do 
 
 <img width="1216" height="653" alt="Image" src="https://github.com/user-attachments/assets/e3b1846b-e271-4e9f-be49-404809f4c692" />
 
-# Conclusão do Modelo
+# 🏁 Conclusão do Modelo
 
 Com base na análise realizada, segue um resumo do desempenho do modelo no conjunto de teste de 114 amostras:
 
