@@ -51,7 +51,7 @@ Pontos Isolados: Casos onde o círculo azul e o X vermelho aparecem separados na
 
 <img width="1390" height="480" alt="Image" src="https://github.com/user-attachments/assets/ad6c5665-e942-478f-9d51-3570e8e63bc6" />
 
-# Matriz de Confusão
+# 🪟 Matriz de Confusão
 
 Para avaliar melhor o desempenho dos nossos classificadores, calculamos e exibimos a matriz de confusão para os modelos de Árvore de Decisão e Regressão Logística. Isso nos forneceu informações sobre o número de previsões verdadeiras positivas, verdadeiras negativas, falsas positivas e falsas negativas.
 
@@ -99,7 +99,7 @@ Na imagem abaixo Calculamos a acurácia, a precisão e a revocação para os mod
 
 <img width="1237" height="656" alt="Image" src="https://github.com/user-attachments/assets/d4afa752-246d-4b38-a459-b9bfc0d9c562" />
 
-# Comparação das métricas de desempenho do modelo
+# ⚖️ Comparação das métricas de desempenho do modelo
 
 Com base nas métricas de desempenho que calculamos e visualizamos (Acurácia, Precisão, e Recall), podemos observar o seguinte:
 
@@ -111,13 +111,13 @@ Recall (Sensibilidade): Ambos os modelos tiveram o mesmo recall (0.9070). Isso i
 
 <img width="990" height="590" alt="Image" src="https://github.com/user-attachments/assets/aa77404d-792c-4511-94bf-70344307802f" />
 
-# Curvas ROC
+# 📈 Curvas ROC
 
 Para avaliar melhor o desempenho dos nossos modelos, especialmente considerando a relação entre a taxa de verdadeiros positivos (sensibilidade) e a taxa de falsos positivos (1 - especificidade), vamos plotar a curva ROC (Receiver Operating Characteristic) para os modelos de Árvore de Decisão e Regressão Logística. Também calcularemos a Área Sob a Curva (AUC), que resume a capacidade do modelo de distinguir entre as classes.
 
 <img width="846" height="624" alt="Image" src="https://github.com/user-attachments/assets/7b8b601f-a1d1-4259-9975-e3fbd67c82ca" />
 
-# Relatório de Classificação
+# 📋 Relatório de Classificação
 
 Esse relatório de classificação é para obter uma análise mais detalhada do desempenho do modelo, além da acurácia, precisão e recall, usamos o classification_report. Este relatório fornece essas métricas por classe, juntamente com a pontuação F1 e o suporte (número de ocorrências reais da classe no conjunto de dados especificado).
 
