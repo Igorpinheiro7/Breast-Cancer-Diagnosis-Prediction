@@ -29,13 +29,16 @@ Estrutura dos Dados: Os subconjuntos foram mapeados nas variáveis X_train_actua
 
 <img width="1321" height="315" alt="Image" src="https://github.com/user-attachments/assets/291965c2-3d87-472d-9e65-868c18947863" />
 
-# Avaliando a Precisão do Modelo
+# 🏆 Avaliação e Comparação de Modelos
+Após a etapa de modelagem, o desempenho dos algoritmos foi avaliado com base na métrica de acurácia no conjunto de teste:
 
-Regressão Logística: Alcançou o desempenho superior com uma acurácia de 95.61%.
+Regressão Logística: Alcançou o desempenho superior, atingindo 95,61% de acurácia.
 
-Árvore de Decisão: Apresentou excelente robustez, atingindo uma acurácia de 93.86%.
+Árvore de Decisão: Apresentou excelente robustez, com 93,86% de acurácia.
 
-**Superioridade Linear Confiável:** Ambas as abordagens demonstraram um desempenho extremamente sólido na classificação de casos malignos e benignos. No entanto, a Regressão Logística obteve uma acurácia ligeiramente superior e maior estabilidade neste conjunto de teste específico. Isso sugere que, após a padronização e o escalonamento dos recursos (StandardScaler), as fronteiras de decisão do problema ganharam uma separabilidade linear muito bem definida.
+**Análise de Separabilidade Linear:** Ambos os modelos demonstraram alta solidez na classificação de tumores malignos e benignos. Contudo, a Regressão Logística obteve uma acurácia ligeiramente superior e maior estabilidade.
+
+Esse comportamento sugere que, após a aplicação do escalonamento de atributos com o StandardScaler, as fronteiras de decisão do problema ganharam uma separabilidade linear bem definida, favorecendo o modelo linear sobre a abordagem baseada em árvores.
 
 <img width="1016" height="347" alt="Image" src="https://github.com/user-attachments/assets/0b5029ba-1654-4350-9718-63970f302c1b" />
 
