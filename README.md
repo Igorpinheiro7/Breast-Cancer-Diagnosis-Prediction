@@ -136,3 +136,5 @@ Com base na análise realizada, segue um resumo do desempenho do modelo no conju
 
 Ambos os modelos demonstram um desempenho sólido na classificação de casos malignos e benignos. A Regressão Logística apresenta acurácia e precisão ligeiramente superiores neste conjunto de teste específico.
 
+Link dos dados Utilizados no projeto a seguir: https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data/data
+
