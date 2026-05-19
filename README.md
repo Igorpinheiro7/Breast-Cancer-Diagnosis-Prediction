@@ -110,7 +110,7 @@ Para avaliar melhor o desempenho dos nossos modelos, especialmente considerando 
 
 # Relatório de Classificação
 
-Para obter uma análise mais detalhada do desempenho do modelo, além da acurácia, precisão e recall, usamos o classification_report. Este relatório fornece essas métricas por classe, juntamente com a pontuação F1 e o suporte (número de ocorrências reais da classe no conjunto de dados especificado).
+Esse relatório de classificação é para obter uma análise mais detalhada do desempenho do modelo, além da acurácia, precisão e recall, usamos o classification_report. Este relatório fornece essas métricas por classe, juntamente com a pontuação F1 e o suporte (número de ocorrências reais da classe no conjunto de dados especificado).
 
 <img width="1216" height="653" alt="Image" src="https://github.com/user-attachments/assets/e3b1846b-e271-4e9f-be49-404809f4c692" />
 
