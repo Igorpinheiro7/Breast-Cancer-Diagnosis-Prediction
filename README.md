@@ -48,14 +48,96 @@ Para avaliar melhor o desempenho dos nossos classificadores, calculamos e exibim
 
 <img width="528" height="470" alt="Image" src="https://github.com/user-attachments/assets/7270be9e-2bd1-43e8-8af5-11d2e1dc41a3" />
 
+### **Matriz de Confusão para a Árvore de Decisão:**
+
+```
+[[68  3]
+ [ 4 39]]
+```
+
+-   **68 Verdadeiros Negativos (VN):** O modelo previu corretamente que 68 casos eram **Benignos** e eles realmente eram Benignos. (Canto superior esquerdo)
+-   **3 Falsos Positivos (FP):** O modelo previu que 3 casos eram **Malignos**, mas eles eram realmente Benignos. (Canto superior direito - Erro Tipo I)
+-   **4 Falsos Negativos (FN):** O modelo previu que 4 casos eram **Benignos**, mas eles eram realmente Malignos. (Canto inferior esquerdo - Erro Tipo II)
+-   **39 Verdadeiros Positivos (VP):** O modelo previu corretamente que 39 casos eram **Malignos** e eles realmente eram Malignos. (Canto inferior direito)
+
+--- 
+
+#### **Matriz de Confusão para a Regressão Logística:**
+
+```
+[[70  1]
+ [ 4 39]]
+```
+
+-   **70 Verdadeiros Negativos (VN):** O modelo previu corretamente que 70 casos eram **Benignos** e eles realmente eram Benignos. (Canto superior esquerdo)
+-   **1 Falso Positivo (FP):** O modelo previu que 1 caso era **Maligno**, mas ele era realmente Benigno. (Canto superior direito - Erro Tipo I)
+-   **4 Falsos Negativos (FN):** O modelo previu que 4 casos eram **Benignos**, mas eles eram realmente Malignos. (Canto inferior esquerdo - Erro Tipo II)
+-   **39 Verdadeiros Positivos (VP):** O modelo previu corretamente que 39 casos eram **Malignos** e eles realmente eram Malignos. (Canto inferior direito)
+
+--- 
+
+**Comparação:**
+
+*   A **Regressão Logística** teve um desempenho ligeiramente melhor na identificação de casos Benignos, com apenas 1 Falso Positivo (contra 3 da Árvore de Decisão).
+*   Ambos os modelos tiveram o mesmo número de Falsos Negativos (4), o que significa que ambos erraram em 4 casos de câncer (Maligno) predizendo que eram Benignos.
+*   Ambos os modelos acertaram o mesmo número de Verdadeiros Positivos (39), identificando corretamente os casos Malignos.
+
 # Calculando a acurácia, a precisão e a revocação
 
 Na imagem abaixo Calculamos a acurácia, a precisão e a revocação para os modelos de Árvore de Decisão e Regressão Logística. Essas métricas fornecem uma avaliação mais abrangente do desempenho do modelo, especialmente em conjuntos de dados desbalanceados.
 
 <img width="1237" height="656" alt="Image" src="https://github.com/user-attachments/assets/d4afa752-246d-4b38-a459-b9bfc0d9c562" />
 
+# Comparação das métricas de desempenho do modelo
+
+Com base nas métricas de desempenho que calculamos e visualizamos (Acurácia, Precisão, e Recall), podemos observar o seguinte:
+
+Acurácia: A Regressão Logística (0.9561) superou ligeiramente a Árvore de Decisão (0.9386), indicando que a Regressão Logística fez uma proporção maior de previsões corretas no geral.
+
+Precisão: A Regressão Logística (0.9750) mostrou uma precisão significativamente maior do que a Árvore de Decisão (0.9286). Isso significa que, quando a Regressão Logística previu um caso como maligno, a probabilidade de estar correto foi maior.
+
+Recall (Sensibilidade): Ambos os modelos tiveram o mesmo recall (0.9070). Isso indica que ambos foram igualmente bons em identificar a proporção de todos os casos malignos que foram corretamente identificados. Ou seja, ambos os modelos deixaram de identificar 4 casos malignos, como visto nas matrizes de confusão.
+
+<img width="990" height="590" alt="Image" src="https://github.com/user-attachments/assets/aa77404d-792c-4511-94bf-70344307802f" />
+
 # Curvas ROC
 
 Para avaliar melhor o desempenho dos nossos modelos, especialmente considerando a relação entre a taxa de verdadeiros positivos (sensibilidade) e a taxa de falsos positivos (1 - especificidade), vamos plotar a curva ROC (Receiver Operating Characteristic) para os modelos de Árvore de Decisão e Regressão Logística. Também calcularemos a Área Sob a Curva (AUC), que resume a capacidade do modelo de distinguir entre as classes.
 
 <img width="846" height="624" alt="Image" src="https://github.com/user-attachments/assets/7b8b601f-a1d1-4259-9975-e3fbd67c82ca" />
+
+# Relatório de Classificação
+
+Para obter uma análise mais detalhada do desempenho do modelo, além da acurácia, precisão e recall, usamos o classification_report. Este relatório fornece essas métricas por classe, juntamente com a pontuação F1 e o suporte (número de ocorrências reais da classe no conjunto de dados especificado).
+
+<img width="1216" height="653" alt="Image" src="https://github.com/user-attachments/assets/e3b1846b-e271-4e9f-be49-404809f4c692" />
+
+# Conclusão do Modelo
+
+Com base na análise realizada, segue um resumo do desempenho do modelo no conjunto de teste de 114 amostras:
+
+* **Classificador de Árvore de Decisão:**
+
+* Acurácia: 0,9386
+
+* Precisão: 0,9286
+
+* Revocação: 0,9070
+
+* **Regressão Logística:**
+
+* Acurácia: 0,9561
+
+* Precisão: 0,9750
+
+* Revocação: 0,9070
+
+Ambos os modelos demonstram um desempenho sólido na classificação de casos malignos e benignos. A Regressão Logística apresenta acurácia e precisão ligeiramente superiores neste conjunto de teste específico.
+
+Em relação à importância das características:
+
+* **Árvore de Decisão:** Identificou `concave points_mean`, `texture_worst` e `concave points_worst` como as características mais importantes. Essas características foram cruciais para a árvore realizar suas divisões.
+
+**Regressão Logística (Escalonada):** Destacou `texture_worst`, `radius_se` e ​​`symmetry_worst` como tendo os maiores coeficientes absolutos, sugerindo uma forte relação linear com a variável alvo quando as características são padronizadas.
+
+Há alguma sobreposição nas principais características identificadas por ambos os modelos (por exemplo, `texture_worst`), o que sugere que essas características são indicadores robustos para o diagnóstico de câncer de mama em diferentes paradigmas de modelagem. Análises adicionais com mais dados e técnicas de validação cruzada proporcionariam uma compreensão mais robusta do desempenho do modelo e garantiriam a generalização para dados não vistos.
