@@ -134,10 +134,3 @@ Com base na análise realizada, segue um resumo do desempenho do modelo no conju
 
 Ambos os modelos demonstram um desempenho sólido na classificação de casos malignos e benignos. A Regressão Logística apresenta acurácia e precisão ligeiramente superiores neste conjunto de teste específico.
 
-Em relação à importância das características:
-
-* **Árvore de Decisão:** Identificou `concave points_mean`, `texture_worst` e `concave points_worst` como as características mais importantes. Essas características foram cruciais para a árvore realizar suas divisões.
-
-**Regressão Logística (Escalonada):** Destacou `texture_worst`, `radius_se` e ​​`symmetry_worst` como tendo os maiores coeficientes absolutos, sugerindo uma forte relação linear com a variável alvo quando as características são padronizadas.
-
-Há alguma sobreposição nas principais características identificadas por ambos os modelos (por exemplo, `texture_worst`), o que sugere que essas características são indicadores robustos para o diagnóstico de câncer de mama em diferentes paradigmas de modelagem. Análises adicionais com mais dados e técnicas de validação cruzada proporcionariam uma compreensão mais robusta do desempenho do modelo e garantiriam a generalização para dados não vistos.
