@@ -9,17 +9,23 @@ Este projeto desenvolve um pipeline de dados e inteligência artificial focado e
 
 Utilizando dados clínicos e características celulares extraídos de imagens digitalizadas de biópsias aspirativas por agulha fina (PAAF), o projeto aborda desde a análise exploratória (EDA), tratamento e escalonamento de atributos, até o treinamento comparativo de modelos preditivos. Foram aplicados algoritmos de Regressão Logística e Árvores de Decisão, alcançando métricas sólidas de acurácia (até 95.6%) e fornecendo interpretabilidade clínica através da extração das variáveis celulares com maior peso estatístico no diagnóstico.
 
-# 🧹 Pré-processamento de dados
+# ⚙️ Pré-processamento de Dados
 
-**Foi Removida colunas irrelevantes**: A coluna 'id' é apenas um identificador e 'Sem nome: 32' contém apenas valores nulos.
+**Remoção de atributos irrelevantes:** Eliminação das colunas id (apenas um identificador único) e Sem nome: 32 (composta integralmente por valores nulos).
 
-**Codifiquei a variável alvo:** A coluna 'diagnosis', que indica 'Maligno' ou 'Benigno', foi convertida para formato numérico (por exemplo, M=1, B=0).
+**Codificação da variável alvo:** Conversão da coluna diagnóstico para o formato numérico ($M = 1$ para Maligno e $B = 0$ para Benigno), preparando os dados para os algoritmos de Machine Learning.
 
 <img width="1368" height="554" alt="Image" src="https://github.com/user-attachments/assets/bfbc6d6c-5e16-4f8e-bcfd-58d4747c7bf7" />
 
-# Divisão em Conjuntos de Treinamento e Teste
+# ✂️ Divisão em Treino e Teste
 
-Por fim, dividirei os dados pré-processados em conjuntos de treinamento e teste para avaliar o desempenho do modelo em dados não vistos. Utilizarei a função train_test_split com um test_size de 0.2 (20% para o conjunto de teste) e random_state=42 para garantir a reprodutibilidade dos resultados. Após a divisão, os dados de treino e teste serão armazenados nas variáveis X_train_actual, X_test_actual, y_train_actual e y_test_actual, permitindo validar as dimensões (shape) de cada matriz antes de iniciar a modelagem.
+Para garantir uma avaliação robusta e medir a capacidade de generalização do modelo em dados não vistos, a base de dados foi dividida utilizando a técnica de amostragem aleatória:
+
+Proporção: 80% para o conjunto de treinamento e 20% para o conjunto de teste (test_size=0.2).
+
+Reprodutibilidade: Fixação do estado aleatório com random_state=42 para assegurar a consistência dos resultados em futuras execuções.
+
+Estrutura dos Dados: Os subconjuntos foram mapeados nas variáveis X_train_actual, X_test_actual, y_train_actual e y_test_actual, permitindo a validação das dimensões (shapes) das matrizes antes da etapa de modelagem.
 
 <img width="1321" height="315" alt="Image" src="https://github.com/user-attachments/assets/291965c2-3d87-472d-9e65-868c18947863" />
 
